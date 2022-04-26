@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Source Code](https://github.com/blarrklad/notes-app)
-- Live Site URL: [Live Preview](https://notes-app-alpha.vercel.app)
+- Live Site URL: [Live Preview](https://notes-app-blarrklad.vercel.app)
 
 ## My process
 
