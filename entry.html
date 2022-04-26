@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Note</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Notes Header -->
+    <header id="header-container">
+        <div class="header-wrapper wrap flex">
+            <h1>Notes App</h1>
+            <p>Take notes and never forget</p>
+        </div>
+    </header>
+    <!-- Notes Navbar -->
+    <section id="navbar-container">
+        <div class="navbar-wrapper wrap flex">
+            <a id="navbar-link" href="#">Home</a>
+            <p id="navbar-stamp">Last edited a few seconds ago</p>
+        </div>
+    </section>
+    <!-- Notes Form -->
+    <section id="form-container">
+        <div class="form-wrapper wrap flex">
+            <input type="text" name="" id="form-title" placeholder="Note Title">
+            <textarea name="" id="form-body" placeholder="Enter Note Text"></textarea>
+            <button id="form-button" class="button">Remove Note</button>
+        </div>
+    </section>
+    <!-- Notes Script -->
+    <script src="plugins/date.js"></script>
+    <script src="scripts/rand.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>

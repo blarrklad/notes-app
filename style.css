@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: inherit;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+img {
+    display: block;
+}
+
+input, select, textarea, button {
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+/* Utilities */
+.wrap {
+    width: 90%;
+    max-width: 900px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    color: hsl(0, 0%, 93%);
+    padding: 0.5rem;
+    transition: background-color ease .3s;
+    margin-bottom: 1rem;
+}
+
+/* Header */
+#header-container {
+    height: 6rem;
+    background-color: hsl(204, 40%, 44%);
+}
+
+.header-wrapper {
+    line-height: 1.3;
+    justify-content: center;
+    color: hsl(0, 0%, 100%);
+}
+
+/* Action */
+#action-container {
+    height: 3rem;
+    background-color: hsl(0, 0%, 97%);
+    border-bottom: 2px solid hsl(210, 3%, 87%);
+}
+
+.action-wrapper {
+    flex-direction: row;
+    align-items: center;
+}
+
+.action-wrapper > input, 
+.action-wrapper > select {
+    width: 45%;
+    max-width: 250px;
+    margin-right: 1rem;
+    height: 2rem;
+    padding-left: 0.3rem;
+}
+
+.action-wrapper > input::-webkit-search-cancel-button {
+    max-width: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    content: url(images/icon_close.svg);
+}
+
+/* List */
+#list-container {
+    min-height: calc(100vh - 9rem);
+    padding: 1rem 0;
+    background-color: transparent;
+}
+
+.list-null {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.list-inner-wrapper {
+    display: block;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 97%);
+    color: hsl(0, 0%, 20%);
+    border: 1px solid hsl(210, 3%, 87%);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: background-color ease .3;
+}
+
+.list-inner-wrapper:hover {
+    background-color: hsl(0, 0%, 93%);
+}
+
+.list-sort {
+    opacity: 0.5;
+}
+
+.list-inner-wrapper > h3 {
+    font-weight: 600;
+    margin-bottom: 0.1rem;
+}
+
+.list-inner-wrapper > p {
+    /* font-style: italic; */
+    color: hsl(0, 0%, 40%);
+}
+
+.list-wrapper > button {
+    background-color: hsl(204, 40%, 44%);
+}
+
+.list-wrapper > button:hover {
+    background-color: hsl(204, 40%, 37%);
+}
+
+/* Navbar */
+#navbar-container {
+    height: 3rem;
+    background-color: hsl(0, 0%, 97%);
+    border-bottom: 2px solid hsl(210, 3%, 87%);
+}
+
+.navbar-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-wrapper > a {
+    color: hsl(204, 40%, 44%);
+}
+
+.navbar-wrapper > p {
+    /* display: inline-block; */
+    color: hsl(0, 0%, 20%);
+}
+
+/* Form */
+#form-container {
+    min-height: calc(100vh - 9rem);
+    padding: 1em 0;
+    background-color: transparent;
+}
+
+.form-wrapper > input,
+.form-wrapper > textarea {
+    padding: 0.5em;
+    margin-bottom: 1rem;
+}
+
+.form-wrapper > textarea {
+    resize: none;
+    height: 10rem;
+}
+
+.form-wrapper > button {
+    align-self: flex-start;
+    background-color: hsl(0, 0%, 53%);
+}
+
+.form-wrapper > button:hover {
+    background-color: hsl(0, 0%, 43%);
+}
+
